@@ -1,7 +1,6 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
-  text: document.querySelector("#text"),
-  box: document.getElementById("big-black-box"),
-  points: document.querySelectorAll(".point"),
+  box: document.getElementById("container-box"),
+  input: document.querySelector("#input"),
 };
-console.log(DOMSelectors.button);
+DOMSelectors.box.insertAdjacentHTML("");
