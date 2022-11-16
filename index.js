@@ -21,3 +21,5 @@ function input() {
   </div>`
   );
 }
+const remove = document.querySelectorAll("div.");
+DOMSelectors.button;
