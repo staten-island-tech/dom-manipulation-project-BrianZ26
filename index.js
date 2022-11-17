@@ -13,7 +13,7 @@ DOMSelectors.form.addEventListener("submit", function (event) {
 function input() {
   DOMSelectors.display.insertAdjacentHTML(
     "beforeend",
-    `<div class="display-card">
+    `<div class="display-card" id="card">
   <img class="display-img" src=${DOMSelectors.url.value} /> 
   <h2 class="display-artist">${DOMSelectors.artist.value}</h2> 
   <h3 class="display-album">${DOMSelectors.title.value}</h3> 
@@ -21,5 +21,9 @@ function input() {
   </div>`
   );
 }
-const remove = document.querySelectorAll("div.");
-DOMSelectors.button;
+function card() {
+  const remove = DOMSelectors.display.querySelectorAll(" remove btn");
+  remove.forEach((button) => {
+    console.log(1);
+  });
+}

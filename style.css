@@ -122,7 +122,7 @@ h5 {
 .display-album {
   font-size: var(--h3);
 }
-.remove {
+.remove-btn {
   padding: 1rem 2rem;
   display: inline-block;
   margin: 1rem;
