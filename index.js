@@ -20,10 +20,14 @@ function input() {
   <button class="remove btn" id="btn">Remove Album</button> 
   </div>`
   );
+  card();
 }
 function card() {
-  const remove = DOMSelectors.display.querySelectorAll(" remove btn");
-  remove.forEach((button) => {
-    console.log(1);
+  let remove = DOMSelectors.display.querySelectorAll("#btn");
+  console.log(remove);
+  remove.forEach((el) => {
+    el.addEventListener("click", function (el) {
+      this.parentElement.remove();
+    });
   });
 }
