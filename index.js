@@ -23,8 +23,7 @@ function input() {
   card();
 }
 function card() {
-  let remove = DOMSelectors.display.querySelectorAll("#btn");
-  console.log(remove);
+  let remove = DOMSelectors.display.querySelectorAll(".remove");
   remove.forEach((el) => {
     el.addEventListener("click", function (el) {
       this.parentElement.remove();
