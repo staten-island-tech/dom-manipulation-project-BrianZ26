@@ -17,13 +17,13 @@ function input() {
   <img class="display-img" src=${DOMSelectors.url.value} /> 
   <h2 class="display-artist">${DOMSelectors.artist.value}</h2> 
   <h3 class="display-album">${DOMSelectors.title.value}</h3> 
-  <button class="remove btn" id="btn">Remove Album</button> 
+  <button class="remove btn">Remove Album</button> 
   </div>`
   );
   card();
 }
 function card() {
-  let remove = DOMSelectors.display.querySelectorAll(".remove");
+  let remove = document.querySelectorAll(".remove");
   remove.forEach((el) => {
     el.addEventListener("click", function (el) {
       this.parentElement.remove();
